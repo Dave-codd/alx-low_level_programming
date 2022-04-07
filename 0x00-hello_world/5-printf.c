@@ -2,7 +2,7 @@
 /**
  * main - Entry point.
  *
- * Return: return 0(Sucess)
+ * Return: terminates main and return 0(Success)
  */
 int main(void)
 {
