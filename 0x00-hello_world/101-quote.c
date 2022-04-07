@@ -1,12 +1,12 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<unistd.h>
 /**
- * main - Entry point.
+ * main - Entry point
  *
- * Return: returns 1.
+ * Return: Always 1(Sucess)
  */
 int main(void)
 {
-	system("echo and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	char my_str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, my_str, 60);
 	return (1);
 }
