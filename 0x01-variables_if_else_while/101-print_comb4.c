@@ -2,49 +2,29 @@
 /**
  * main - Entry point
  *
- * Documentaion: prints combination of three digit numbers
+ * Documentation: prints combinations of three digits
  * Return: Always 0(Success)
  */
 int main(void)
 {
-	int i, e, g, h, op1, op2;
+	int i, j, k;
 
-	i = e = g = h = 48;
-
-	while (h < 58)
+	for (i = 48; i < 58; i++)
 	{
-		g = 48;
-		while (g < 58)
+		for (j = 48; j < 58; j++)
 		{
-			e = 48;
-			while (e < 58)
+			for (k = 48; j < 58; k++)
 			{
-				i = 48;
-				while (i < 58)
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				if (i != 55 && j != 56)
 				{
-					op1 = (h * 10) + g;
-					op2 = (e * 10) + i;
-					if (op1 < op2)
-					{
-						putchar(h);
-						putchar(g);
-						putchar(' ');
-						putchar(e);
-						putchar(i);
-						if (h == 57 && g == 56 && e == 57 && i == 57)
-						{
-							break;
-						}
-						putchar(',');
-						putchar(' ');
-					}
-					i++;
+					putchar(',');
+					putchar(' ');
 				}
-				e++;
 			}
-			g++;
 		}
-		h++;
 	}
 	putchar('\n');
 	return (0);
