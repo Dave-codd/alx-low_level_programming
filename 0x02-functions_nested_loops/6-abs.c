@@ -1,19 +1,18 @@
 #include "main.h"
 /**
  * _abs - Finds the absolute value of a number
- * @int: number to be checked type int
+ * @k: number to be checked type int
  *
  * Return: positive numbers
  */
-int _abs(int)
+int _abs(int k)
 {
 	int k;
-	int n;
 
 	if (k < 0)
 	{
-		n = -1 * k;
-		return (n);
+		k = k * -1;
+		return (k);
 	}
 	else if (k > 0)
 	{
