@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 - prints 1 character out of 2
- * @str; input string
+ * @str: input string
  */
 void puts2(char *str)
 {
@@ -15,7 +15,7 @@ void puts2(char *str)
 			break;
 		}
 		if (count % 2 == 0)
-			_putchar(str[count]);;
+			_putchar(str[count]);
 		count++;
 	}
 }
