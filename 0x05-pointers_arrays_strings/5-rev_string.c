@@ -5,24 +5,30 @@
  */
 void rev_string(char *s)
 {
-	int count = 0;
+	int count = 0, i, j;
+	char *str, temp;
 
 	while (count >= 0)
 	{
 		if (s[count] == '\0')
 		{
-			_putchar('\n');
 			break;
 		}
 		else
 		{
-			_putchar(s[count]);
 			count++;
 		}
 	}
-	for (count--; count >= 0; count--)
+
+	str = s;
+
+	for (i = 0; i < (count - 1); i++)
 	{
-		_putchar(s[count]);
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(str + j);
+			*(str + j) = *(str + (j - 1));
+			*(str + (j - 1)) = temp;
+		}
 	}
-	_putchar('\n');
 }
