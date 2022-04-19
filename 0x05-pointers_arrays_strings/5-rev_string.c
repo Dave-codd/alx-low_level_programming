@@ -11,10 +11,12 @@ void rev_string(char *s)
 	{
 		if (s[count] == '\0')
 		{
+			_putchar('\n');
 			break;
 		}
 		else
 		{
+			_putchar(s[count]);
 			count++;
 		}
 	}
@@ -22,4 +24,5 @@ void rev_string(char *s)
 	{
 		_putchar(s[count]);
 	}
+	_putchar('\n');
 }
