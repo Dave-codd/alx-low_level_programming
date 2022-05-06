@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > j)
 		n = j;
 
-	k = i + j;
+	k = i + n;
 
 	output = malloc(k + 1);
 
