@@ -8,7 +8,7 @@
  *
  * Return: Always 0(Sucess)
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	char *opc = (char *) main;
 	int i, nbytes;
